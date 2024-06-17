@@ -26,7 +26,8 @@ jobs:
 
     - name: Copy pm2_status.json to gh-pages
       run: |
-        cp pm2_status.json pm2_status.json
+        cp pm2_status.json tachsin.github.io/pm2_status.json
+        cd tachsin.github.io
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git add pm2_status.json
